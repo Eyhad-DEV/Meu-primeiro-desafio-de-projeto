@@ -1,0 +1,20 @@
+#  :question: Could not find UI helper 'GitHub.UI' :question:
+
+
+
+Salve dev beleza? bom vamos direto ao assunto. Certamente se você baixou a versão 2.39 do git você encontrou este pequeno problema na hora de fazer o "push" e enviar seu repositorio para a nuvem.
+
+Bom, primeiro vamos entender um pouco sobre o erro. Ele acontece por uma divergencia na instalação de GCM (Git Credential Manager) que é o responsavel pela autenticação do usuario para o envio do repositório. Se esse erro apareceu para você é bem provavel que ao tentar usar o comando de push ou pull o seu git não abra nenhuma caixa de autenticção e nem consegue fazer o mesmo de forma automatica.
+
+Agora que ja sabemos o problema é mais fácil resolver não é mesmo? aqui vai o passo a passo:
+
+- Acesse o repositorio localizado em [](https://github.com/GitCredentialManager/git-credential-manager/issues/993#issuecomment-1352358027)
+- Instale manualmente o GCM (Eu indico a versão 2.0.886)
+- Após finalizar a instalação abrirá uma aba de login para suas credenciais do GIT, use seu email e senha e pronto, pode enviar seus repositorios tranquilamente.
+
+
+
+### Espero ter ajuado!
+
+
+
